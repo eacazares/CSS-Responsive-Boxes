@@ -38,13 +38,16 @@ body {
   .a {
     width: 100%;
     flex-grow: 1;
+    height: 20vh;
   }
 
   .b {
     width: 100%;
+    height: 60vh;
   }
   .c {
     width:100%;
     flex-grow: 1;
+    height: 20vh;
   }
 }
