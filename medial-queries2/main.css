@@ -6,11 +6,15 @@ body {
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  height: 100vh;
-  gap: 1rem;
+  display: grid;
+  height: 100%;
+  grid-template-areas: 
+    "header header header header"
+    "areaB areaB areaB areaF"
+    "areaC areaD areaE areaF";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1vw
 }
 
 * {
@@ -18,22 +22,29 @@ body {
 }
 
 .a {
-  min-width: 100%;
+  grid-area: header;
   min-height: 20%;
+
 }
 
 .b {
-  min-width: 70vh;
-  min-height: 20%;
+  grid-area: areaB;
 }
 
 .c {
-  flex-grow: 1;
+  grid-area: areaC;
+  
+  
 }
 
-.d {flex-grow: 1;
+.d {
+  grid-area: areaD;
 }
 
 .e {
-  flex-grow: 1;
+  grid-area: areaE;
+}
+
+.f {
+  grid-area: areaF;
 }
