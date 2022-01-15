@@ -1,3 +1,39 @@
 body {
   background: papayawhip;
+  height: 100vh;
+  padding: 1rem;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 100vh;
+  gap: 1rem;
+}
+
+* {
+  border: 1px solid black;
+}
+
+.a {
+  min-width: 100%;
+  min-height: 20%;
+}
+
+.b {
+  min-width: 70vh;
+  min-height: 20%;
+}
+
+.c {
+  flex-grow: 1;
+}
+
+.d {flex-grow: 1;
+}
+
+.e {
+  flex-grow: 1;
 }
