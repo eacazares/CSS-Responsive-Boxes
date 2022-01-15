@@ -1,3 +1,58 @@
 body {
   background: peachpuff;
+  height: 100vh;
+  padding: 1rem;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  height: 100%;
+  grid-template-areas: 
+    "header header header header"
+    "areaB areaC areaD areaH"
+    "areaE areaF areaG areaH";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1vw
+}
+
+* {
+  border: 1px solid black;
+}
+
+.a {
+  grid-area: header;
+  min-height: 20%;
+
+}
+
+.b {
+  grid-area: areaB;
+}
+
+.c {
+  grid-area: areaC;
+  
+  
+}
+
+.d {
+  grid-area: areaD;
+}
+
+.e {
+  grid-area: areaE;
+}
+
+.f {
+  grid-area: areaF;
+}
+
+.g {
+  grid-area: areaG;
+}
+
+.h {
+  grid-area: areaH;
 }
